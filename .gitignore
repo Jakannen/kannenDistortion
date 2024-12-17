@@ -5,4 +5,4 @@
 ECHO is on.
 # Ignore build output directories 
 
-./Builds/VisualStudio2022
+Builds/VisualStudio2022
