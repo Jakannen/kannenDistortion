@@ -158,8 +158,8 @@ void KannenDistortionAudioProcessor::processBlock (juce::AudioBuffer<float>& buf
             // Apply volume first
             float cleanSig = *channelData;
 
-            *channelData *= drive * range; // Apply drive and range
-            const float safeBlend = (blend != 0.f) ? blend : 0.001f; // Avoid division by zero
+            *channelData *= drive * range;
+            const float safeBlend = (blend != 0.f) ? blend : 0.001f;
             *channelData = (((((2.f / pi) * atan(*channelData) * safeBlend)) + (cleanSig * (1.f / safeBlend))) / 2) * volume;
 
             ++channelData;
