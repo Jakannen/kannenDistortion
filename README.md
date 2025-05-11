@@ -1,4 +1,4 @@
-# kannenDistortion
+# distortionEffect
 
 This project is a personal implementation of a **VST Distortion Effect Plugin** created using the [JUCE Framework](https://juce.com). The plugin provides a simple and effective audio distortion effect with adjustable parameters to shape the sound as needed.
 
